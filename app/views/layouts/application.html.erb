@@ -10,5 +10,11 @@
 
 <%= yield %>
 
+<nav>
+  <%= link_to("Home", index_path) %>
+  <%= link_to("Encode a message", new_path) %>
+  <%= link_to("Decode a message", new_decoding_path) %>
+</nav>
+
 </body>
 </html>

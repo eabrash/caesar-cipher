@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+
+  get 'decodings/new' => 'decodings#new', as: 'new_decoding'
+
+  post 'decodings/show' => 'decodings#show', as: 'show_decoding'
+
+  root to: 'encodings#index'
+
+  get 'encodings/index' => 'encodings#index', as: 'index'
+
+  get 'encodings/new' => 'encodings#new', as: 'new'
+
+  post 'encodings/show' => 'encodings#show', as: 'show'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

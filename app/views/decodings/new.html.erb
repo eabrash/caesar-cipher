@@ -1,0 +1,9 @@
+<h1>Decode your message!</h1>
+<form name="new-message" action="show" method="post" accept-charset="utf-8">
+  <label for="offset">Offset letter:</label>
+  <input type="text" name="offset" id="offset">
+  <label for="message">Message to decode:</label>
+  <input type="text" name="message" id="message">
+  <!-- <%= tag(:input, :type => "hidden", :name => request_forgery_protection_token.to_s, :value => form_authenticity_token) %> -->
+  <input type="submit" value="Decode it!">
+</form>
